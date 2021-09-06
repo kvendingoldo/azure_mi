@@ -43,7 +43,7 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/kvendingoldo/azure_mi:${{ steps.set_version.outputs.safe_version }
+            ghcr.io/kvendingoldo/azure_mi:${{ steps.set_version.outputs.safe_version }}
       -
         name: Print image version
         run: echo ${{ steps.set_version.outputs.safe_version }}
